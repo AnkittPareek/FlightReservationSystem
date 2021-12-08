@@ -1,11 +1,48 @@
 package com.company;
 
 public class Flight {
-    public int flightNumber;
-    public String airlineOfFlight;
-    public int capacity;
-    public int bookedSeats;
-    public String getFlightDetails(){
+//    Attributes
+    private int flightNumber;
+    private String airlineOfFlight;
+    private int capacity;
+    private int bookedSeats;
+
+
+//  Getters and Setters
+    public int getFlightNumber() {
+        return flightNumber;
+    }
+
+    public void setFlightNumber(int flightNumber) {
+        this.flightNumber = flightNumber;
+    }
+
+    public String getAirlineOfFlight() {
+        return airlineOfFlight;
+    }
+
+    public void setAirlineOfFlight(String airlineOfFlight) {
+        this.airlineOfFlight = airlineOfFlight;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public int getBookedSeats() {
+        return bookedSeats;
+    }
+
+    public void setBookedSeats(int bookedSeats) {
+        this.bookedSeats = bookedSeats;
+    }
+
+    //    Methods
+    private String getFlightDetails(){
         return "";
     }
     public boolean isSeatAvailable(int capacity, int bookedSeats){

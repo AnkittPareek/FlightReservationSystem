@@ -5,11 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
         Passanger p1 = new Passanger();
-        Contact p1Contact = new Contact();
-        Address p1Address = new Address();
-        TouristTicket ticket1 = new TouristTicket();
-        RegularTicket ticket2 = new RegularTicket();
-        Flight flight = new Flight();
-
+        System.out.println(p1.isTourist());
+        System.out.println(p1.getContact());
+        System.out.println(p1.getPassangerCount());
     }
 }
