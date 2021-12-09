@@ -1,20 +1,20 @@
 package com.company;
 
 public class Passanger {
-//    Attributes
+    //    Attributes
     private boolean isTourist;
     private Contact contactDetails;
     private Address addressDetails;
-    private static int idCounter=0;
+    private static int idCounter = 0;
 
-//    Constructers
-    public Passanger(boolean isTourist){
+    //    Constructers
+    public Passanger(boolean isTourist) {
         int id = idCounter++;
         this.contactDetails = new Contact();
         this.addressDetails = new Address();
     }
 
-//  Getters and Setters
+    //  Getters and Setters
     public boolean isTourist() {
         return isTourist;
     }
@@ -47,7 +47,8 @@ public class Passanger {
     public Address getAddress() {
         return addressDetails;
     }
-    public int getPassangerCount(){
+
+    public int getPassangerCount() {
         return idCounter;
     }
 
@@ -95,7 +96,7 @@ public class Passanger {
         }
     }
 
-    private static class Contact{
+    private static class Contact {
 
         //    Attributes
         private String name;

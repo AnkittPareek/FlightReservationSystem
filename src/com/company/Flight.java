@@ -1,14 +1,14 @@
 package com.company;
 
 public class Flight {
-//    Attributes
+    //    Attributes
     private int flightNumber;
     private String airlineOfFlight;
     private int capacity;
     private int bookedSeats;
 
-//    Constructors
-    public Flight(int flightNumber,String airlineOfFlight,int capacity,int bookedSeats){
+    //    Constructors
+    public Flight(int flightNumber, String airlineOfFlight, int capacity, int bookedSeats) {
         this.flightNumber = flightNumber;
         this.airlineOfFlight = airlineOfFlight;
         this.capacity = capacity;
@@ -16,7 +16,7 @@ public class Flight {
     }
 
 
-//  Getters and Setters
+    //  Getters and Setters
     public int getFlightNumber() {
         return flightNumber;
     }
@@ -50,13 +50,15 @@ public class Flight {
     }
 
     //    Methods
-    private String getFlightDetails(){
+    private String getFlightDetails() {
         return "";
     }
-    public boolean isSeatAvailable(int capacity, int bookedSeats){
+
+    public boolean isSeatAvailable(int capacity, int bookedSeats) {
         return (capacity - bookedSeats) > 0;
     }
-    public void updateBookedSeats(){
+
+    public void updateBookedSeats() {
 
     }
 }

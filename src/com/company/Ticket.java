@@ -10,11 +10,11 @@ public abstract class Ticket {
     private int seatNumber;
     private int priceOfTicket;
     private boolean isCancelled;
-    private Flight flight ;
+    private Flight flight;
     private Passanger passanger;
 
 
-//      Constructors
+    //      Constructors
     public Ticket(String pnrNumber, String depLocation, String destination, Flight flight,
                   String dateOfDep, double timeOfDep, Passanger passanger, int
                           seatNumber, int priceOfTicket, boolean isCancelled) {
@@ -102,14 +102,6 @@ public abstract class Ticket {
 
     public void setPriceOfTicket(int priceOfTicket) {
         this.priceOfTicket = priceOfTicket;
-    }
-
-    public boolean isCancelled() {
-        return isCancelled;
-    }
-
-    public void setCancelled(boolean cancelled) {
-        isCancelled = cancelled;
     }
 
 
