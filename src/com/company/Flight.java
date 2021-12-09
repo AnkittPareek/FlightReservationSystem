@@ -51,7 +51,7 @@ public class Flight {
 
     //    Methods
     private String getFlightDetails() {
-        return "";
+        return this.airlineOfFlight+". Flight number is : "+this.flightNumber;
     }
 
     public boolean isSeatAvailable(int capacity, int bookedSeats) {
@@ -59,6 +59,6 @@ public class Flight {
     }
 
     public void updateBookedSeats() {
-
+        bookedSeats = capacity--;
     }
 }

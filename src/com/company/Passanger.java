@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Passanger {
     //    Attributes
     private boolean isTourist;
@@ -52,6 +54,12 @@ public class Passanger {
         return idCounter;
     }
 
+    public void bookRegularTicket(){
+        System.out.println("Regular Ticket Booked");
+    }
+    public void bookTouristTicket() {
+        System.out.println("Tourist Ticket Booked");
+    }
 
     private static class Address {
 
@@ -86,14 +94,6 @@ public class Passanger {
             this.state = state;
         }
 
-        //     Methods
-        public String getAddressDetails() {
-            return "";
-        }
-
-        public void updateAddressDetails(String addressDetail) {
-
-        }
     }
 
     private static class Contact {
@@ -129,15 +129,8 @@ public class Passanger {
             this.emailId = emailId;
         }
 
-        //      Methods
-        public String getContactDetails() {
-            return "";
         }
 
-        public void updateContactDetail(String contactDetail) {
-
-        }
-
-    }
 }
+
 
