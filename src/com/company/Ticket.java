@@ -1,27 +1,20 @@
 package com.company;
 
 public abstract class Ticket {
-
-//    Attributes
+    //    Attributes
     private String pnrNumber;
     private String depLocation;
     private String destination;
-    private Flight flight = new Flight();
     private String dateOfDep;
     private double timeOfDep;
-    private Passanger passanger;
     private int seatNumber;
     private int priceOfTicket;
     private boolean isCancelled;
-
+    private Flight flight = new Flight();
+    private Passanger passanger;
 
 
 //      Constructors
-
-    public Ticket() {
-
-    }
-
     public Ticket(String pnrNumber, String depLocation, String destination, Flight flight,
                   String dateOfDep, double timeOfDep, Passanger passanger, int
                           seatNumber, int priceOfTicket, boolean isCancelled) {
@@ -37,13 +30,8 @@ public abstract class Ticket {
         this.isCancelled = isCancelled;
     }
 
-//    public Ticket(Flight flight){
-//        this.flight = flight;
-//    }
 
-
-
-//  Getters and Setters
+    //  Getters and Setters
     public String getPnrNumber() {
         return pnrNumber;
     }
@@ -125,15 +113,16 @@ public abstract class Ticket {
     }
 
 
-
-//      Methods
-    public boolean findStatus(){
+    //      Methods
+    public boolean findStatus() {
         return isCancelled;
     }
-    public double findDuration(double timeOfArrival, double timeOfDep){
-        return  timeOfArrival-timeOfDep;
+
+    public double findDuration(double timeOfArrival, double timeOfDep) {
+        return timeOfArrival - timeOfDep;
     }
-    public void cancelTicket(){
+
+    public void cancelTicket() {
         this.isCancelled = true;
     }
 }
