@@ -10,7 +10,7 @@ public abstract class Ticket {
     private int seatNumber;
     private int priceOfTicket;
     private boolean isCancelled;
-    private Flight flight = new Flight();
+    private Flight flight ;
     private Passanger passanger;
 
 

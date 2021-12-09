@@ -8,7 +8,7 @@ public class Passanger {
     private static int idCounter=0;
 
 //    Constructers
-    public Passanger(){
+    public Passanger(boolean isTourist){
         int id = idCounter++;
         this.contactDetails = new Contact();
         this.addressDetails = new Address();

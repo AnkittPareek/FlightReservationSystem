@@ -7,6 +7,14 @@ public class Flight {
     private int capacity;
     private int bookedSeats;
 
+//    Constructors
+    public Flight(int flightNumber,String airlineOfFlight,int capacity,int bookedSeats){
+        this.flightNumber = flightNumber;
+        this.airlineOfFlight = airlineOfFlight;
+        this.capacity = capacity;
+        this.bookedSeats = bookedSeats;
+    }
+
 
 //  Getters and Setters
     public int getFlightNumber() {
